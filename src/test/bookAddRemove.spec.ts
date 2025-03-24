@@ -31,7 +31,7 @@ test.describe('Book Add And Remove Test Suite', () => {
     token = (await authResponse.json()).token;
   });
 
-  test.only('Request list of books, Add first book and then remove it', async ({
+  test('Request list of books, Add first book and then remove it', async ({
     commonApiFixture,
     userApiFixture,
     bookApiFixture,
