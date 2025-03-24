@@ -1,6 +1,13 @@
 # Playwright Sample API Testing Scenario Demo
 
 This repository contains a Playwright UI test written in TypeScript and is configured to run tests in different environments such as QA and Production. This is meant to showcase Playwright API testing for https://bookstore.toolsqa.com/swagger/ with various API calls.
+The suite tests following operations -
+1. [POST] Authorize a user.
+2. [GET] Get the list of books.
+3. [GET] Get details of first book from list.
+4. [POST] Add the book to user account.
+5. [GET] Check the books under user account.
+6. [DELETE] Remove the book from  user account.
 
 ## Table of Contents
 
@@ -67,38 +74,37 @@ API Testing(Bookstore) using Playwright/
 ├── node_modules/
 ├── playwright-report/
 ├── src/
-│   ├── test/
-│   │   ├── constants/
-│   │   │   └── api-request-constant.ts
-│   │   ├── fixtures/
-│   │   │   └── api-fixture.ts
-│   │   ├── resources/
-│   │   │   ├── prod/
-│   │   │   │   └── add-book-request.json
-│   │   │   │   └── auth-request.json
-│   │   │   │   └── books-list-request.json
-│   │   │   │   └── common-config.json
-│   │   │   │   └── delete-book-request.json
-│   │   │   │   └── get-booksForUser-request.json
-│   │   │   └── qa/
-│   │   │   │   └── add-book-request.json
-│   │   │   │   └── auth-request.json
-│   │   │   │   └── books-list-request.json
-│   │   │   │   └── common-config.json
-│   │   │   │   └── delete-book-request.json
-│   │   │   │   └── get-booksForUser-request.json
-│   │   ├── utils/
-│   │   │   ├── api-clients.ts
-│   │   │   └── create-request.ts
-│   │   ├── centerSearch.spec.ts
-│		└── auth.spec.ts
-│		└── bookAddRemove.spec.ts
+│   └── test/
+│      ├── constants/
+│      │   └── api-request-constant.ts
+│      ├── fixtures/
+│      │   └── api-fixture.ts
+│      ├── resources/
+│      │   ├── prod/
+│      │   │   └── add-book-request.json
+│      │   │   └── auth-request.json
+│      │   │   └── books-list-request.json
+│      │   │   └── common-config.json
+│      │   │   └── delete-book-request.json
+│      │   │   └── get-booksForUser-request.json
+│      │   └── qa/
+│      │   │   └── add-book-request.json
+│      │   │   └── auth-request.json
+│      │   │   └── books-list-request.json
+│      │   │   └── common-config.json
+│      │   │   └── delete-book-request.json
+│      │   │   └── get-booksForUser-request.json
+│      ├── utils/
+│      │   ├── api-clients.ts
+│      │   └── create-request.ts
+│      ├── auth.spec.ts
+│      └── bookAddRemove.spec.ts
 ├── test-results/
 ├── .gitignore
 |── .prettierrc
 ├── package-lock.json
 ├── package.json
-└── playwright.config.ts
+├── playwright.config.ts
 └── README.md
 ```
 
