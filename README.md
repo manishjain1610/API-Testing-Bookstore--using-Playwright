@@ -1,5 +1,7 @@
 # Playwright Sample API Testing Scenario Demo
 
+[![Playwright API Tests for Book Operations](https://github.com/manishjain1610/API-Testing-Bookstore--using-Playwright/actions/workflows/playwright-ci.yml/badge.svg)](https://github.com/manishjain1610/API-Testing-Bookstore--using-Playwright/actions/workflows/playwright-ci.yml)
+
 This repository contains a Playwright UI test written in TypeScript and is configured to run tests in different environments such as QA and Production. This is meant to showcase Playwright API testing for https://bookstore.toolsqa.com/swagger/ with various API calls.
 The suite tests following operations -
 1. [POST] Authorize a user.
