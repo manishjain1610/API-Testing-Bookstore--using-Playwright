@@ -1,0 +1,26 @@
+{
+  "name": "bookstoreapitests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-qa": "set TEST_ENV=qa && npx playwright test && npx playwright show-report",
+    "test-prod": "set TEST_ENV=prod && npx playwright test && npx playwright show-report",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "api-testing",
+    "nodejs"
+  ],
+  "author": "Manish Jain",
+  "license": "ISC",
+  "description": "Sample test suite written to showcase API testing using Playwright",
+  "dependencies": {
+    "@playwright/test": "^1.51.1",
+    "prettier": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11"
+  }
+}
