@@ -18,7 +18,7 @@
   "description": "Sample test suite written to showcase API testing using Playwright",
   "dependencies": {
     "@playwright/test": "^1.51.1",
-    "prettier": "^3.5.3"
+    "prettier": "^3.7.3"
   },
   "devDependencies": {
     "@types/node": "^22.13.11"
